@@ -28,8 +28,13 @@
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
-				width: 60px;
+				width: 200px;
 				background-color: #141f1f
+			}
+
+			li {
+				
+				display: inline;
 			}
 
 			li a {
@@ -37,10 +42,18 @@
 				color: #000;
 				padding: 8px 16px;
 				text-decoration: none;
+				color: white;
+				font-size: 20px
 			}
 
-			li a:hover {
-  				background-color: #141f1f;
+			li a.active {
+  				background-color: #000;
+  				color: white;
+  				font-size: 30px;
+			}
+
+			li a:hover:not(.active) {
+  				background-color: #555;
   				color: white;
 			}
 		</style>
@@ -51,10 +64,11 @@
 		<!-- Header 2 -->
 		<!-- <div class="header"> -->
 			<ul>
-  				<li {font-size:40px; color:#FFFFFF;}><a href="https://ayshaaamer.github.io/index.html" target="_blank">Aysha Aamer</a></li>
-  				<li {color:#FFFFFF;}><a href="https://ayshaaamer.github.io/index.html" target="_blank">Research Experience</a></li>
-  				<li {color:#FFFFFF;}><a href="https://ayshaaamer.github.io/index.html" target="_blank">ORBYTS</a></li>
-  				<li {color:#FFFFFF;}><a href="https://ayshaaamer.github.io/index.html" target="_blank">Work Experience</a></li>
+  				<li><a class="active" href="https://ayshaaamer.github.io/index.html" target="_blank">Aysha Aamer</a></li>
+  				<li><a href="https://ayshaaamer.github.io/index.html" target="_blank">Research Experience</a></li>
+  				<li><a href="https://ayshaaamer.github.io/index.html" target="_blank">ORBYTS</a></li>
+  				<li><a href="https://ayshaaamer.github.io/index.html" target="_blank">Work Experience</a></li>
+  				<li><a href="https://ayshaaamer.github.io/index.html" target="_blank">Gallery</a></li>
   			</ul>
 		<!-- </div> -->
 
